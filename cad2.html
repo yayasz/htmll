@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segundo exemplo de cadastro</title>
+</head>
+<body>
+    <style>
+        body{
+            font-family:  Arial, Helvetica, sans-serif;
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            background-color: pink;
+        }
+        label{
+            display: block;
+            margin-bottom: 8px;
+        }
+        label, textarea{
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px ;
+            border: 1px solid color(#ccc);
+           
+        }
+        button{
+            padding: 10pxl/px;
+            background-color: #4CAF50 ;
+            color:white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-left: 600px;
+        }
+
+        button:hover{
+            background-color: #45a049;
+
+        }
+    </style>
+    <h1>Formulario de contato</h1>
+    <form action="submit" method="post">
+    <label for="name">Nome:</label>
+    <input type="text" id="name" required maxlength="50" 
+    minlength="2" placeholder="Digite seu nome">
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required placeholder="Digite seu email">
+
+    <label for="telefone">Telefone:</label>
+    <input type="tel" name="Telefone" pattern="[0-9{5}]-[0-9]{3}" placeholder="(66) 99999-8888" required>
+    <label for="age">Idade:</label>
+    <input type="number" name="age" id="age" min="18" max="100"
+    required placeholder="Digite sua Idade">
+    <h4>Liguagem Preferida</h4>
+    <label for="html">HTML</label>
+    <input type="checkbox" name="html" id="html">
+
+    <label for="css">CSS</label>
+    <input type="checkbox" name="css" id="css">
+
+    <label for="JavaScript">JavaScript</label>
+    <input type="checkbox" name="JavaScript" id="JavaScript">
+
+
+    <label for="message">Mensagem:</label>
+    <textarea name="message" id="message" rows="5" maxlength="10" placeholder="Digite sua mensagem"></textarea>
+    <button type="submit">Enviar</button>
+    </label>
+    </form>
+</body>
+</html>
